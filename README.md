@@ -16,7 +16,8 @@
 
 ---
 
-<img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790285851823-4955b8f5511ea8235af22dfb82371c91.png" alt="ZAARD INNOVATION Banner" width="400" style="border-radius: 12px; border: 2px solid #fcd535;"/>
+![log ZARED](https://photos.pinksale.finance/file/pinksale-logo-upload/1790285851823-4955b8f5511ea8235af22dfb82371c91.png)
+# 🚀 ZAARD TRACKER - ZARD INNOVATION
 
 </div>
 
