@@ -1,56 +1,49 @@
 ![logo ZARED](https://raw.githubusercontent.com/figueredo56/ZARD.token/refs/heads/main/170%20sin%20t%C3%ADtulo_20260707213436.png)
+# 🚀 ZAARD TRACKER - ZARD INNOVATION
 
-# 🌌 ZAARD INNOVATION: El Despertar de la Triquetra
-## 🔱 Fase III: ZARED Protocol – El Núcleo de Inteligencia
+<div align="center">
 
-[![Fase](https://img.shields.io/badge/Fase-III_Triquetra-purple)](https://github.com/figueredo56/ZAARD_ALX.md)
-[![Ecosistema](https://img.shields.io/badge/Protocolo-Fenix_Rise-red)](https://github.com/figueredo56/ZAARD-Proyecto-Seguro)
-[![Trading](https://img.shields.io/badge/Utility-High_Frequency_Trade-blue)](https://app.binance.com/uni-qr/web3-token-details?utm_medium=share&tokenCA=0x073c12c7072676c9a1afd83c07e470aa7d81aeb3&binanceChainId=56&chain=bsc)
+[![BNB Smart Chain](https://img.shields.io/badge/Network-BNB%20Smart%20Chain-F3BA2F?style=for-the-badge&logo=binance)](https://bscscan.com)
+[![GitHub Pages](https://img.shields.io/badge/Hosted-GitHub%20Pages-2ea44f?style=for-the-badge&logo=github)](https://figueredo56.github.io/zaard-tracker/)
+[![Status](https://img.shields.io/badge/Status-Active%20%2F%20Mainnet-00ffcc?style=for-the-badge)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-![imagen trilogia](https://raw.githubusercontent.com/figueredo56/ZARED/refs/heads/main/70%20sin%20t%C3%ADtulo_20260514112008.png)
+<p align="center">
+  <b>Panel de Analíticas en Tiempo Real, Monitoreo de Mercado y Métricas del Ecosistema Web3 XENOCRYPT</b>
+</p>
 
-### "Tres puntas, un solo poder inquebrantable."
-
-El ecosistema **ZAARD Innovation** alcanza su forma definitiva. Hemos construido una arquitectura donde la tecnología y la estrategia se fusionan en la **Triquetra de Poder**. **ZARED** no es solo el cierre de una trilogía; es el cerebro que conecta la fuerza y la evolución.
-
----
-
-## 💎 La Trilogía del Poder
-
-| Protocolo | Atributo Maestro | Función en el Ecosistema |
-| :--- | :--- | :--- |
-| **PANGA** | **La Evolución, el poder ejecutable** | El token especializado en **tradeo de alta precisión**. Es el refugio de valor y el motor económico que lo inició todo. |
-| **ZAARD** | **La Fuerza Fénix** | El brazo ejecutor. Encargado de los **juegos Web3**, los **NFTs** y la expansión masiva. Es la energía que renace y domina el arcade. |
-| **ZARED** | **La Inteligencia Panga** | La tercera punta. El protocolo de **inteligencia y lógica avanzada** que coordina la sinergia de la red. |
+[🌐 Ver Aplicación en Vivo](https://figueredo56.github.io/zaard-tracker/) · [💬 Canal de Telegram](https://t.me/ZAARD_Guardian_bot) · [📜 PancakeSwap](https://pancakeswap.finance/swap?outputCurrency=0x472d59538effe1c85382e3e62e1b2ec995d382ef)
 
 ---
 
-## ⚙️ El Cambio 20/80: Eficiencia de Élite
-Implementamos la **Regla de Oro del Ecosistema**: El cambio **20/80**. 
-Buscamos el máximo impacto con una estructura optimizada, donde el 20% de nuestra arquitectura lógica genera el 80% del valor y la seguridad para nuestros holders y jugadores. Menos ruido, más resultados.
+<img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790285851823-4955b8f5511ea8235af22dfb82371c91.png" alt="ZAARD INNOVATION Banner" width="400" style="border-radius: 12px; border: 2px solid #fcd535;"/>
+
+</div>
 
 ---
 
-## 🎮 El Arsenal de ZAARD Innovation
-*   **ZAARD (The Vault):** Liquidez bloqueada, auditoría lógica y el epicentro del trading profesional.
-*   **PANGA (The Phoenix):** Integración total con nuestra línea de juegos arcade y colecciones NFT exclusivas.
-*   **ZARED (The Brain):** La culminación técnica. El contrato inteligente que estabiliza y da sentido a la tercera fase de expansión.
+## 💎 ¿Qué es ZAARD Tracker?
+
+**ZAARD Tracker** es la herramienta oficial de analíticas y seguimiento de mercado desarrollada bajo el sello **XENOCRYPT** para el ecosistema **ZAARD INNOVATION**. Permite a la comunidad, inversores y holders visualizar en tiempo real métricas clave de rendimiento, pares de cambio, libros de órdenes (spreads) y la integración directa con contratos inteligentes en la **BNB Smart Chain (BSC)**.
 
 ---
 
-## 🛠 Detalles Técnicos de ZARED (Fase III)
-*   **Smart Contract:** `ZARED.sol`
-*   **Estatus:** Fase III - Triquetra Activada.
-*   **Compilador:** Solidity 0.8.19 / 0.8.28.
-*   **Seguridad:** Auditoría bajo el sello **Xenocrypt Audit Label** por **Aracelis Figueredo**.
+## 🌟 Características Principales
+
+*   📊 **Monitoreo de Pares en Tiempo Real:** Visualización dinámica de cotizaciones para los principales pares del ecosistema (`BNB / ZARD`, `USDT / ZARD`, `BTC / ZARD`).
+*   ⚡ **Libro de Órdenes (Spread Desk):** Control visual de operaciones de compra (*BUY*) y venta (*SELL*) con indicadores de liquidez actualizados.
+*   👛 **Conexión Web3 Integrada:** Enlace directo con MetaMask y billeteras compatibles con la red BSC (Chain ID `0x38`).
+*   🔄 **Acceso Directo a DEX:** Botones de intercambio rápido vinculados con **PancakeSwap** utilizando el contrato oficial actualizado.
+*   🌍 **Diseño Optimizado & Responsivo:** Interfaz cyberpunk de alta gama con fuentes *Orbitron* y *Rajdhani*, adaptada para dispositivos móviles y de escritorio.
 
 ---
----
-## 🛠 Pool de liquidez de ZARED (Fase I)
 
-![pool zared](https://raw.githubusercontent.com/figueredo56/ZARED/17a05f4f67a60bf668abdaf371de91f6f08d4eb7/79%20sin%20t%C3%ADtulo_20260517161409_2.png)
+## 📜 Contrato Oficial (BSC)
 
----
+El token oficial del ecosistema opera bajo el siguiente contrato verificado en BscScan:
+
+```text
+0x472d59538effe1c85382e3e62e1b2ec995d382ef
 ---
 
 ## 🌐 Our Official Digital Presence
