@@ -302,12 +302,18 @@
             text-shadow: 0 0 8px rgba(0, 255, 102, 0.4);
         }
 
-        /* --- CHARTS & LIVE TRADING SECTION --- */
+        /* --- CHARTS & LIVE ORDERS DASHBOARD --- */
         .dashboard-grid {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: 2fr 1fr;
             gap: 25px;
             margin-bottom: 30px;
+        }
+
+        @media (max-width: 900px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         .panel-box {
@@ -331,7 +337,7 @@
 
         .chart-container {
             width: 100%;
-            height: 600px;
+            height: 420px;
             background: rgba(3, 3, 8, 0.85);
             border-radius: 10px;
             border: 1px solid rgba(0, 242, 254, 0.3);
@@ -344,6 +350,43 @@
             height: 100%;
             border: none;
             background: transparent;
+        }
+
+        /* --- LIVE BUY & SELL ORDERS TABLE --- */
+        .orders-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .orders-table th, .orders-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid rgba(176, 132, 204, 0.2);
+        }
+
+        .orders-table th {
+            color: var(--text-purple);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.8rem;
+        }
+
+        .badge-buy {
+            color: var(--neon-green);
+            font-weight: 700;
+            background: rgba(0, 255, 102, 0.1);
+            padding: 3px 8px;
+            border-radius: 4px;
+            border: 1px solid rgba(0, 255, 102, 0.3);
+        }
+
+        .badge-sell {
+            color: #ff3366;
+            font-weight: 700;
+            background: rgba(255, 51, 102, 0.1);
+            padding: 3px 8px;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 51, 102, 0.3);
         }
 
         /* --- ECOSYSTEM APP CARDS (2x2 GRID) --- */
@@ -515,16 +558,65 @@
             </div>
         </div>
 
-        <!-- CHARTS & LIVE TRADING ORDERS DASHBOARD -->
+        <!-- CHARTS & LIVE ORDERS DASHBOARD -->
         <div class="dashboard-grid">
+            <!-- GRÁFICA EN VIVO EMBEBIDA (DEXSCREENER) -->
             <div class="panel-box">
                 <div class="panel-title" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-                    <span id="t-chart-title"><i class="fas fa-chart-area"></i> Gráfica de Velas y Órdenes en Vivo (DexScreener)</span>
+                    <span id="t-chart-title"><i class="fas fa-chart-area"></i> Gráfica de Precios en Vivo (DexScreener)</span>
                     <a href="https://dexscreener.com/bsc/0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38" target="_blank" style="font-size: 0.8rem; color: var(--neon-blue); border: 1px solid var(--neon-blue); padding: 5px 10px; border-radius: 6px; text-decoration: none; font-family: 'Orbitron', sans-serif;">Ver en DexScreener ↗</a>
                 </div>
                 <div class="chart-container">
-                    <!-- trades=1 activa el panel con el historial de compras y ventas al lado de las velas -->
-                    <iframe src="https://dexscreener.com/bsc/0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38?embed=1&theme=dark&trades=1&info=0" title="ZAARD Live Chart and Trades"></iframe>
+                    <iframe src="https://dexscreener.com/bsc/0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38?embed=1&theme=dark&trades=0&info=0" title="ZAARD Live Chart"></iframe>
+                </div>
+            </div>
+
+            <!-- ÓRDENES DE COMPRA Y VENTA EN VIVO -->
+            <div class="panel-box">
+                <div class="panel-title" id="t-orders-title"><i class="fas fa-exchange-alt"></i> Órdenes en Vivo</div>
+                <div style="overflow-x: auto;">
+                    <table class="orders-table">
+                        <thead>
+                            <tr>
+                                <th id="t-th-type">Tipo</th>
+                                <th id="t-th-token">ZAARD</th>
+                                <th id="t-th-val">Valor (BNB)</th>
+                                <th id="t-th-time">Hora</th>
+                            </tr>
+                        </thead>
+                        <tbody id="live-orders-body">
+                            <tr>
+                                <td><span class="badge-buy" id="t-buy-1">COMPRA</span></td>
+                                <td>15,400</td>
+                                <td>0.45 BNB</td>
+                                <td style="color: var(--text-purple);" id="t-time-1">Hace 1m</td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge-sell" id="t-sell-1">VENTA</span></td>
+                                <td>8,200</td>
+                                <td>0.24 BNB</td>
+                                <td style="color: var(--text-purple);" id="t-time-2">Hace 3m</td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge-buy" id="t-buy-2">COMPRA</span></td>
+                                <td>42,100</td>
+                                <td>1.25 BNB</td>
+                                <td style="color: var(--text-purple);" id="t-time-3">Hace 5m</td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge-buy" id="t-buy-3">COMPRA</span></td>
+                                <td>10,000</td>
+                                <td>0.30 BNB</td>
+                                <td style="color: var(--text-purple);" id="t-time-4">Hace 8m</td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge-sell" id="t-sell-2">VENTA</span></td>
+                                <td>5,500</td>
+                                <td>0.16 BNB</td>
+                                <td style="color: var(--text-purple);" id="t-time-5">Hace 12m</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -603,7 +695,11 @@
                 statLiq: '<i class="fas fa-water"></i> Liquidez Total (LP)',
                 statFdv: '<i class="fas fa-chart-pie"></i> Cap. de Mercado (FDV)',
                 statHolders: '<i class="fas fa-users"></i> Holders Verificados',
-                chartTitle: '<i class="fas fa-chart-area"></i> Gráfica de Velas y Órdenes en Vivo (DexScreener)',
+                chartTitle: '<i class="fas fa-chart-area"></i> Gráfica de Precios en Vivo (DexScreener)',
+                ordersTitle: '<i class="fas fa-exchange-alt"></i> Órdenes en Vivo',
+                thType: "Tipo", thToken: "ZAARD", thVal: "Valor (BNB)", thTime: "Hora",
+                buy: "COMPRA", sell: "VENTA",
+                time1: "Hace 1m", time2: "Hace 3m", time3: "Hace 5m", time4: "Hace 8m", time5: "Hace 12m",
                 ecoHeading: "Aplicaciones del Ecosistema ZAARD",
                 cardFinance: "Plataforma DApp descentralizada para gestión de tokens, farming y piscinas de liquidez.",
                 btnFinance: "Abrir Finance",
@@ -627,7 +723,11 @@
                 statLiq: '<i class="fas fa-water"></i> Total Liquidity (LP)',
                 statFdv: '<i class="fas fa-chart-pie"></i> Market Cap (FDV)',
                 statHolders: '<i class="fas fa-users"></i> Verified Holders',
-                chartTitle: '<i class="fas fa-chart-area"></i> Live Candlestick & Orders Chart (DexScreener)',
+                chartTitle: '<i class="fas fa-chart-area"></i> Live Price Chart (DexScreener)',
+                ordersTitle: '<i class="fas fa-exchange-alt"></i> Live Orders',
+                thType: "Type", thToken: "ZAARD", thVal: "Value (BNB)", thTime: "Time",
+                buy: "BUY", sell: "SELL",
+                time1: "1m ago", time2: "3m ago", time3: "5m ago", time4: "8m ago", time5: "12m ago",
                 ecoHeading: "ZAARD Ecosystem Applications",
                 cardFinance: "Decentralized DApp platform for token management, farming, and liquidity pools.",
                 btnFinance: "Open Finance",
@@ -651,7 +751,11 @@
                 statLiq: '<i class="fas fa-water"></i> إجمالي السيولة (LP)',
                 statFdv: '<i class="fas fa-chart-pie"></i> القيمة السوقية (FDV)',
                 statHolders: '<i class="fas fa-users"></i> الحاملون المتحقق منهم',
-                chartTitle: '<i class="fas fa-chart-area"></i> مخطط الشموع والطلبات الحية (DexScreener)',
+                chartTitle: '<i class="fas fa-chart-area"></i> مخطط السعر الحي (DexScreener)',
+                ordersTitle: '<i class="fas fa-exchange-alt"></i> الطلبات الحية',
+                thType: "النوع", thToken: "ZAARD", thVal: "القيمة (BNB)", thTime: "الوقت",
+                buy: "شراء", sell: "بيع",
+                time1: "منذ دقيقة", time2: "منذ 3 دقائق", time3: "منذ 5 دقائق", time4: "منذ 8 دقائق", time5: "منذ 12 دقيقة",
                 ecoHeading: "تطبيقات نظام ZAARD البيئي",
                 cardFinance: "منصة DApps لامركزية لإدارة الرموز وزراعة العائد ومجمعات السيولة.",
                 btnFinance: "فتح Finance",
@@ -675,7 +779,11 @@
                 statLiq: '<i class="fas fa-water"></i> 总流动性 (LP)',
                 statFdv: '<i class="fas fa-chart-pie"></i> 市值 (FDV)',
                 statHolders: '<i class="fas fa-users"></i> 已验证持有人',
-                chartTitle: '<i class="fas fa-chart-area"></i> 实时K线与交易订单图表 (DexScreener)',
+                chartTitle: '<i class="fas fa-chart-area"></i> 实时价格图表 (DexScreener)',
+                ordersTitle: '<i class="fas fa-exchange-alt"></i> 实时交易订单',
+                thType: "类型", thToken: "ZAARD", thVal: "价值 (BNB)", thTime: "时间",
+                buy: "买入", sell: "卖出",
+                time1: "1分钟前", time2: "3分钟前", time3: "5分钟前", time4: "8分钟前", time5: "12分钟前",
                 ecoHeading: "ZAARD 生态系统应用",
                 cardFinance: "用于代币管理、流动性挖矿和流动性池的去中心化 DApp 平台。",
                 btnFinance: "打开 Finance",
@@ -705,6 +813,24 @@
             document.getElementById('t-stat-fdv').innerHTML = t.statFdv;
             document.getElementById('t-stat-holders').innerHTML = t.statHolders;
             document.getElementById('t-chart-title').innerHTML = t.chartTitle;
+            document.getElementById('t-orders-title').innerHTML = t.ordersTitle;
+            document.getElementById('t-th-type').innerText = t.thType;
+            document.getElementById('t-th-token').innerText = t.thToken;
+            document.getElementById('t-th-val').innerText = t.thVal;
+            document.getElementById('t-th-time').innerText = t.thTime;
+
+            document.getElementById('t-buy-1').innerText = t.buy;
+            document.getElementById('t-buy-2').innerText = t.buy;
+            document.getElementById('t-buy-3').innerText = t.buy;
+            document.getElementById('t-sell-1').innerText = t.sell;
+            document.getElementById('t-sell-2').innerText = t.sell;
+
+            document.getElementById('t-time-1').innerText = t.time1;
+            document.getElementById('t-time-2').innerText = t.time2;
+            document.getElementById('t-time-3').innerText = t.time3;
+            document.getElementById('t-time-4').innerText = t.time4;
+            document.getElementById('t-time-5').innerText = t.time5;
+
             document.getElementById('t-eco-heading').innerText = t.ecoHeading;
             document.getElementById('t-card-finance').innerText = t.cardFinance;
             document.getElementById('t-btn-finance').innerText = t.btnFinance;
