@@ -560,9 +560,12 @@
 
         <!-- CHARTS & LIVE ORDERS DASHBOARD -->
         <div class="dashboard-grid">
-            <!-- GRÁFICA EN VIVO EMBEBIDA (DEXSCREENER) -->
+            <!-- GRÁFICA EN VIVO EMBEBIDA CON EL NUEVO CONTRATO -->
             <div class="panel-box">
-                <div class="panel-title" id="t-chart-title"><i class="fas fa-chart-area"></i> Gráfica de Precios en Vivo (DexScreener)</div>
+                <div class="panel-title" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                    <span id="t-chart-title"><i class="fas fa-chart-area"></i> Gráfica de Precios en Vivo (DexScreener)</span>
+                    <a href="https://dexscreener.com/bsc/0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38" target="_blank" style="font-size: 0.8rem; color: var(--neon-blue); border: 1px solid var(--neon-blue); padding: 5px 10px; border-radius: 6px; text-decoration: none; font-family: 'Orbitron', sans-serif;">Ver en DexScreener ↗</a>
+                </div>
                 <div class="chart-container">
                     <iframe src="https://dexscreener.com/bsc/0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38?embed=1&theme=dark&trades=0&info=0" title="ZAARD Live Chart"></iframe>
                 </div>
