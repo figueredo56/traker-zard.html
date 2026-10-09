@@ -514,7 +514,7 @@
             <div class="nav-links">
                 <a href="https://app.binance.com/uni-qr/web3-token-details?utm_medium=share&tokenCA=0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38&binanceChainId=56&chain=bsc" class="nav-link" target="_blank" id="t-nav-token"><i class="fas fa-coins"></i> Ir al Token</a>
                 <a href="https://figueredo56.github.io/zaard-innovation-dapp/" class="nav-link" target="_blank" id="t-nav-finance"><i class="fas fa-rocket"></i> Ir a ZAARD Finance</a>
-                <a href="https://figueredo56.github.io/DAIoficial/" class="nav-link" target="_blank"><i class="fas fa-globe"></i> <span id="t-web">Web</span></a>
+                <a href="https://figueredo56.github.io/DAIoficial/" class="nav-link" target="_blank" id="t-nav-globe"><i class="fas fa-globe"></i> <span id="t-web">Web</span></a>
             </div>
             <!-- IDIOMA SELECTOR -->
             <select class="lang-select" id="langSelector" onchange="changeLanguage(this.value)">
@@ -672,7 +672,7 @@
             }, 800);
         }
 
-        // Simulación dinámica de precios en vivo
+        // Simulación dinámica estable de precios en vivo para que la gráfica e interfaz fluyan sin interrupciones
         setInterval(() => {
             const randomChange = (Math.random() * 0.0004 - 0.0002);
             let currentPrice = 0.00843 + randomChange;
@@ -853,7 +853,6 @@
             document.getElementById('t-btn-bsc').innerText = t.btnBsc;
             document.getElementById('t-footer').innerHTML = t.footer;
 
-            // Ajuste de dirección de texto para Árabe
             if (lang === 'ar') {
                 document.body.dir = 'rtl';
             } else {
