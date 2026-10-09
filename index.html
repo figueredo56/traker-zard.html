@@ -335,65 +335,21 @@
             text-shadow: 0 0 8px rgba(0, 242, 254, 0.4);
         }
 
-        /* Tarjeta Interactiva de Gráfica Optimizada (Evita bloqueos de iframe) */
-        .chart-interactive-card {
+        .chart-container {
             width: 100%;
             height: 420px;
-            background: rgba(3, 3, 12, 0.9);
-            border-radius: 12px;
-            border: 1px solid var(--neon-blue);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 30px;
-            box-shadow: inset 0 0 25px rgba(0, 242, 254, 0.15);
+            background: rgba(3, 3, 8, 0.85);
+            border-radius: 10px;
+            border: 1px solid rgba(0, 242, 254, 0.3);
+            position: relative;
+            overflow: hidden;
         }
 
-        .chart-interactive-card img {
-            width: 85px;
-            height: 85px;
-            border-radius: 50%;
-            border: 2px solid var(--neon-green);
-            box-shadow: 0 0 20px var(--neon-green);
-            margin-bottom: 15px;
-            object-fit: cover;
-        }
-
-        .chart-interactive-card h3 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.4rem;
-            color: var(--neon-green);
-            margin-bottom: 8px;
-            text-shadow: 0 0 10px rgba(0, 255, 102, 0.4);
-        }
-
-        .chart-interactive-card p {
-            color: var(--text-purple);
-            font-size: 0.95rem;
-            margin-bottom: 20px;
-            max-width: 380px;
-        }
-
-        .chart-action-btn {
-            background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
-            color: #030308;
-            font-family: 'Orbitron', sans-serif;
-            font-weight: 800;
-            padding: 12px 28px;
-            border-radius: 8px;
-            text-decoration: none;
-            box-shadow: 0 0 20px rgba(0, 242, 254, 0.5);
-            transition: 0.3s;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-        }
-
-        .chart-action-btn:hover {
-            background: var(--neon-green);
-            box-shadow: 0 0 30px var(--neon-green);
-            transform: scale(1.05);
+        .chart-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: transparent;
         }
 
         /* --- LIVE BUY & SELL ORDERS TABLE --- */
@@ -604,14 +560,11 @@
 
         <!-- CHARTS & LIVE ORDERS DASHBOARD -->
         <div class="dashboard-grid">
-            <!-- GRÁFICA INTERACTIVA OPTIMIZADA (SIN BLOQUEOS DE IFRAME) -->
+            <!-- GRÁFICA EN VIVO EMBEBIDA (DEXSCREENER) -->
             <div class="panel-box">
-                <div class="panel-title" id="t-chart-title"><i class="fas fa-chart-area"></i> Gráfica de Velas en Vivo (DexScreener)</div>
-                <div class="chart-interactive-card">
-                    <img src="https://raw.githubusercontent.com/figueredo56/DAIoficial/refs/heads/main/CC_20260925_200839.png" alt="ZAARD Logo">
-                    <h3 id="t-chart-box-title">ZAARD / WBNB Pool Activo</h3>
-                    <p id="t-chart-box-desc">Visualiza las velas en tiempo real, el libro de órdenes y los indicadores técnicos avanzados directamente en la plataforma oficial.</p>
-                    <a href="https://dexscreener.com/bsc/0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38" target="_blank" class="chart-action-btn" id="t-chart-btn">Abrir Gráfica en Vivo ↗</a>
+                <div class="panel-title" id="t-chart-title"><i class="fas fa-chart-area"></i> Gráfica de Precios en Vivo (DexScreener)</div>
+                <div class="chart-container">
+                    <iframe src="https://dexscreener.com/bsc/0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38?embed=1&theme=dark&trades=0&info=0" title="ZAARD Live Chart"></iframe>
                 </div>
             </div>
 
@@ -739,10 +692,7 @@
                 statLiq: '<i class="fas fa-water"></i> Liquidez Total (LP)',
                 statFdv: '<i class="fas fa-chart-pie"></i> Cap. de Mercado (FDV)',
                 statHolders: '<i class="fas fa-users"></i> Holders Verificados',
-                chartTitle: '<i class="fas fa-chart-area"></i> Gráfica de Velas en Vivo (DexScreener)',
-                chartBoxTitle: "ZAARD / WBNB Pool Activo",
-                chartBoxDesc: "Visualiza las velas en tiempo real, el libro de órdenes y los indicadores técnicos avanzados directamente en la plataforma oficial.",
-                chartBtn: "Abrir Gráfica en Vivo ↗",
+                chartTitle: '<i class="fas fa-chart-area"></i> Gráfica de Precios en Vivo (DexScreener)',
                 ordersTitle: '<i class="fas fa-exchange-alt"></i> Órdenes en Vivo',
                 thType: "Tipo", thToken: "ZAARD", thVal: "Valor (BNB)", thTime: "Hora",
                 buy: "COMPRA", sell: "VENTA",
@@ -770,10 +720,7 @@
                 statLiq: '<i class="fas fa-water"></i> Total Liquidity (LP)',
                 statFdv: '<i class="fas fa-chart-pie"></i> Market Cap (FDV)',
                 statHolders: '<i class="fas fa-users"></i> Verified Holders',
-                chartTitle: '<i class="fas fa-chart-area"></i> Live Candlestick Chart (DexScreener)',
-                chartBoxTitle: "ZAARD / WBNB Active Pool",
-                chartBoxDesc: "View real-time candlesticks, order book, and advanced technical indicators directly on the official platform.",
-                chartBtn: "Open Live Chart ↗",
+                chartTitle: '<i class="fas fa-chart-area"></i> Live Price Chart (DexScreener)',
                 ordersTitle: '<i class="fas fa-exchange-alt"></i> Live Orders',
                 thType: "Type", thToken: "ZAARD", thVal: "Value (BNB)", thTime: "Time",
                 buy: "BUY", sell: "SELL",
@@ -801,10 +748,7 @@
                 statLiq: '<i class="fas fa-water"></i> إجمالي السيولة (LP)',
                 statFdv: '<i class="fas fa-chart-pie"></i> القيمة السوقية (FDV)',
                 statHolders: '<i class="fas fa-users"></i> الحاملون المتحقق منهم',
-                chartTitle: '<i class="fas fa-chart-area"></i> مخطط الشموع الحية (DexScreener)',
-                chartBoxTitle: "مجمع ZAARD / WBNB النشط",
-                chartBoxDesc: "عرض الشموع في الوقت الفعلي، دفتر Orders، والمؤشرات الفنية المتقدمة مباشرة على المنصة الرسمية.",
-                chartBtn: "فتح الرسم البياني المباشر ↗",
+                chartTitle: '<i class="fas fa-chart-area"></i> مخطط السعر الحي (DexScreener)',
                 ordersTitle: '<i class="fas fa-exchange-alt"></i> الطلبات الحية',
                 thType: "النوع", thToken: "ZAARD", thVal: "القيمة (BNB)", thTime: "الوقت",
                 buy: "شراء", sell: "بيع",
@@ -832,10 +776,7 @@
                 statLiq: '<i class="fas fa-water"></i> 总流动性 (LP)',
                 statFdv: '<i class="fas fa-chart-pie"></i> 市值 (FDV)',
                 statHolders: '<i class="fas fa-users"></i> 已验证持有人',
-                chartTitle: '<i class="fas fa-chart-area"></i> 实时K线图表 (DexScreener)',
-                chartBoxTitle: "ZAARD / WBNB 活跃池",
-                chartBoxDesc: "直接在官方平台上查看实时K线、订单簿和高级技术指标。",
-                chartBtn: "打开实时图表 ↗",
+                chartTitle: '<i class="fas fa-chart-area"></i> 实时价格图表 (DexScreener)',
                 ordersTitle: '<i class="fas fa-exchange-alt"></i> 实时交易订单',
                 thType: "类型", thToken: "ZAARD", thVal: "价值 (BNB)", thTime: "时间",
                 buy: "买入", sell: "卖出",
@@ -869,9 +810,6 @@
             document.getElementById('t-stat-fdv').innerHTML = t.statFdv;
             document.getElementById('t-stat-holders').innerHTML = t.statHolders;
             document.getElementById('t-chart-title').innerHTML = t.chartTitle;
-            document.getElementById('t-chart-box-title').innerText = t.chartBoxTitle;
-            document.getElementById('t-chart-box-desc').innerText = t.chartBoxDesc;
-            document.getElementById('t-chart-btn').innerText = t.chartBtn;
             document.getElementById('t-orders-title').innerHTML = t.ordersTitle;
             document.getElementById('t-th-type').innerText = t.thType;
             document.getElementById('t-th-token').innerText = t.thToken;
