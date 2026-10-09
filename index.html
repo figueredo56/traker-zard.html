@@ -335,14 +335,17 @@
             text-shadow: 0 0 8px rgba(0, 242, 254, 0.4);
         }
 
+        /* Contenedor optimizado de gráfica directa con enlace de respaldo integrado sin fricción */
         .chart-container {
             width: 100%;
             height: 420px;
-            background: rgba(3, 3, 8, 0.85);
+            background: rgba(3, 3, 8, 0.95);
             border-radius: 10px;
-            border: 1px solid rgba(0, 242, 254, 0.3);
+            border: 1px solid rgba(0, 242, 254, 0.4);
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
         }
 
         .chart-container iframe {
@@ -560,11 +563,11 @@
 
         <!-- CHARTS & LIVE ORDERS DASHBOARD -->
         <div class="dashboard-grid">
-            <!-- GRÁFICA EN VIVO EMBEBIDA CON EL NUEVO CONTRATO -->
+            <!-- GRÁFICA OPTIMIZADA CON ENLACE DIRECTO SIN BLOQUEOS -->
             <div class="panel-box">
                 <div class="panel-title" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-                    <span id="t-chart-title"><i class="fas fa-chart-area"></i> Gráfica de Precios en Vivo (DexScreener)</span>
-                    <a href="https://dexscreener.com/bsc/0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38" target="_blank" style="font-size: 0.8rem; color: var(--neon-blue); border: 1px solid var(--neon-blue); padding: 5px 10px; border-radius: 6px; text-decoration: none; font-family: 'Orbitron', sans-serif;">Ver en DexScreener ↗</a>
+                    <span id="t-chart-title"><i class="fas fa-chart-area"></i> Gráfica de Velas en Vivo</span>
+                    <a href="https://dexscreener.com/bsc/0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38" target="_blank" style="font-size: 0.8rem; color: var(--neon-blue); border: 1px solid var(--neon-blue); padding: 5px 10px; border-radius: 6px; text-decoration: none; font-family: 'Orbitron', sans-serif;">Abrir Pantalla Completa ↗</a>
                 </div>
                 <div class="chart-container">
                     <iframe src="https://dexscreener.com/bsc/0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38?embed=1&theme=dark&trades=0&info=0" title="ZAARD Live Chart"></iframe>
@@ -695,7 +698,7 @@
                 statLiq: '<i class="fas fa-water"></i> Liquidez Total (LP)',
                 statFdv: '<i class="fas fa-chart-pie"></i> Cap. de Mercado (FDV)',
                 statHolders: '<i class="fas fa-users"></i> Holders Verificados',
-                chartTitle: '<i class="fas fa-chart-area"></i> Gráfica de Precios en Vivo (DexScreener)',
+                chartTitle: '<i class="fas fa-chart-area"></i> Gráfica de Velas en Vivo',
                 ordersTitle: '<i class="fas fa-exchange-alt"></i> Órdenes en Vivo',
                 thType: "Tipo", thToken: "ZAARD", thVal: "Valor (BNB)", thTime: "Hora",
                 buy: "COMPRA", sell: "VENTA",
@@ -723,7 +726,7 @@
                 statLiq: '<i class="fas fa-water"></i> Total Liquidity (LP)',
                 statFdv: '<i class="fas fa-chart-pie"></i> Market Cap (FDV)',
                 statHolders: '<i class="fas fa-users"></i> Verified Holders',
-                chartTitle: '<i class="fas fa-chart-area"></i> Live Price Chart (DexScreener)',
+                chartTitle: '<i class="fas fa-chart-area"></i> Live Candlestick Chart',
                 ordersTitle: '<i class="fas fa-exchange-alt"></i> Live Orders',
                 thType: "Type", thToken: "ZAARD", thVal: "Value (BNB)", thTime: "Time",
                 buy: "BUY", sell: "SELL",
@@ -751,7 +754,7 @@
                 statLiq: '<i class="fas fa-water"></i> إجمالي السيولة (LP)',
                 statFdv: '<i class="fas fa-chart-pie"></i> القيمة السوقية (FDV)',
                 statHolders: '<i class="fas fa-users"></i> الحاملون المتحقق منهم',
-                chartTitle: '<i class="fas fa-chart-area"></i> مخطط السعر الحي (DexScreener)',
+                chartTitle: '<i class="fas fa-chart-area"></i> مخطط الشموع الحية',
                 ordersTitle: '<i class="fas fa-exchange-alt"></i> الطلبات الحية',
                 thType: "النوع", thToken: "ZAARD", thVal: "القيمة (BNB)", thTime: "الوقت",
                 buy: "شراء", sell: "بيع",
@@ -779,7 +782,7 @@
                 statLiq: '<i class="fas fa-water"></i> 总流动性 (LP)',
                 statFdv: '<i class="fas fa-chart-pie"></i> 市值 (FDV)',
                 statHolders: '<i class="fas fa-users"></i> 已验证持有人',
-                chartTitle: '<i class="fas fa-chart-area"></i> 实时价格图表 (DexScreener)',
+                chartTitle: '<i class="fas fa-chart-area"></i> 实时K线图表',
                 ordersTitle: '<i class="fas fa-exchange-alt"></i> 实时交易订单',
                 thType: "类型", thToken: "ZAARD", thVal: "价值 (BNB)", thTime: "时间",
                 buy: "买入", sell: "卖出",
