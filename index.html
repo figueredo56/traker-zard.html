@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title id="page-title">ZAARD INNOVATION TRACKER OFFICIAL  | Ecosistema Multitoken, NFT & Live Trading</title>
+    <title id="page-title">ZAARD INNOVATION TRACKER OFFICIAL | Ecosistema Multitoken, NFT & Live Tracking</title>
     
     <!-- Open Graph for Social Sharing -->
     <meta property="og:url" content="https://figueredo56.github.io/zaard-tracker/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="ZAARD INNOVATION NEXUS & TRACKER">
-    <meta property="og:description" content="Ecosistema oficial ZAARD. NFTs, juegos de recompensas, bloqueos de seguridad, quema de tokens, liquidez ZARD & PANGA y rastreo en vivo.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/figueredo56/zaard-tracker/refs/heads/main/184%20sin%20t%C3%ADtulo_20260715225022.png">
+    <meta property="og:description" content="Ecosistema oficial ZAARD. Rastreo en vivo de ZARD, PANGA, ZARED y ZYM en BNB Smart Chain.">
+    <meta property="og:image" content="https://photos.pinksale.finance/file/pinksale-logo-upload/1790285851823-4955b8f5511ea8235af22dfb82371c91.png">
 
     <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@
 
         body {
             background-color: var(--bg-dark);
-            background-image: linear-gradient(rgba(3, 3, 8, 0.82), rgba(3, 3, 8, 0.96)), url('https://photos.pinksale.finance/file/pinksale-logo-upload/1790375348672-4de629a77b910ca4b3f245dda1b233f0.png');
+            background-image: linear-gradient(rgba(3, 3, 8, 0.82), rgba(3, 3, 8, 0.96)), url('https://photos.pinksale.finance/file/pinksale-logo-upload/1794687559048-16ebac67278e144f98b264e40bf5690d.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -52,7 +52,7 @@
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100vh;
             background-color: #030308;
-            background-image: linear-gradient(rgba(3, 3, 8, 0.88), rgba(3, 3, 8, 0.98)), url('https://photos.pinksale.finance/file/pinksale-logo-upload/1790375348672-4de629a77b910ca4b3f245dda1b233f0.png');
+            background-image: linear-gradient(rgba(3, 3, 8, 0.88), rgba(3, 3, 8, 0.98)), url('https://photos.pinksale.finance/file/pinksale-logo-upload/1794687559048-16ebac67278e144f98b264e40bf5690d.png');
             background-size: cover; background-position: center;
             display: flex; flex-direction: column; align-items: center; justify-content: center;
             z-index: 9999;
@@ -92,7 +92,7 @@
             transform: scale(1.08); box-shadow: 0 0 50px var(--neon-green), 0 0 25px var(--neon-blue);
         }
 
-        /* --- HEADER & NAVEGACIÓN TIPO NEXUS --- */
+        /* --- HEADER & NAVEGACIÓN --- */
         header {
             background: rgba(15, 12, 35, 0.96);
             border-bottom: 2px solid var(--neon-blue);
@@ -106,18 +106,17 @@
         .brand img { width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--neon-blue); box-shadow: 0 0 15px var(--neon-blue); }
         .brand-name { font-family: 'Orbitron', sans-serif; font-size: 1.4rem; font-weight: 900; color: var(--neon-green); text-shadow: 0 0 12px var(--neon-green); }
 
-        /* Pestañas Superiores Tipo Nexus */
         .nexus-tabs {
-            display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;
+            display: flex; gap: 8px; flex-wrap: wrap; justify-content: center;
         }
 
         .tab-btn {
             background: rgba(12, 6, 26, 0.85);
             border: 1px solid var(--border-glow);
             color: var(--text-purple);
-            padding: 9px 16px; border-radius: 12px;
-            font-family: 'Orbitron', sans-serif; font-size: 0.8rem; font-weight: 700;
-            cursor: pointer; transition: all 0.3s ease; text-decoration: none; display: flex; align-items: center; gap: 6px;
+            padding: 8px 14px; border-radius: 10px;
+            font-family: 'Orbitron', sans-serif; font-size: 0.75rem; font-weight: 700;
+            cursor: pointer; transition: all 0.3s ease; text-decoration: none; display: flex; align-items: center; gap: 5px;
         }
 
         .tab-btn:hover, .tab-btn.active {
@@ -132,28 +131,26 @@
             background: linear-gradient(135deg, rgba(236,72,153,0.25), rgba(0,255,102,0.25));
             border-color: var(--neon-green);
             color: var(--neon-green);
-            box-shadow: 0 0 25px rgba(0, 255, 102, 0.6);
         }
 
-        .tab-btn.arcade-tab {
-            background: linear-gradient(135deg, rgba(212,175,55,0.2), rgba(236,72,153,0.2));
-            border-color: var(--gold);
-            color: var(--gold);
-            animation: pulseArcade 2s infinite alternate;
+        .tab-btn.zared-tab:hover, .tab-btn.zared-tab.active {
+            background: linear-gradient(135deg, rgba(247,37,133,0.25), rgba(76,201,240,0.25));
+            border-color: #f72585;
+            color: #f72585;
         }
 
-        @keyframes pulseArcade {
-            0% { box-shadow: 0 0 10px rgba(212,175,55,0.3); }
-            100% { box-shadow: 0 0 22px rgba(236,72,153,0.6); }
+        .tab-btn.zym-tab:hover, .tab-btn.zym-tab.active {
+            background: linear-gradient(135deg, rgba(6,214,160,0.25), rgba(123,44,191,0.25));
+            border-color: #06d6a0;
+            color: #06d6a0;
         }
 
         .nav-right { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 
         .lang-select {
             background: rgba(176, 132, 204, 0.15); border: 1px solid var(--neon-purple); color: var(--text-purple);
-            padding: 8px 14px; border-radius: 8px; font-family: 'Orbitron', sans-serif; font-size: 0.8rem; font-weight: 600; cursor: pointer; outline: none; transition: 0.3s;
+            padding: 8px 14px; border-radius: 8px; font-family: 'Orbitron', sans-serif; font-size: 0.8rem; font-weight: 600; cursor: pointer; outline: none;
         }
-        .lang-select:hover { border-color: var(--neon-blue); color: var(--neon-blue); box-shadow: 0 0 12px rgba(0,242,254,0.4); }
         .lang-select option { background: #030308; color: #fff; }
 
         .wallet-btn {
@@ -163,7 +160,6 @@
         }
         .wallet-btn:hover { transform: scale(1.05); box-shadow: 0 0 30px var(--neon-green); }
 
-        /* --- CONTAINER & TAB CONTENT --- */
         .container { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
         .tab-content { display: none; }
         .tab-content.active { display: block; animation: fadeIn 0.5s ease-in-out; }
@@ -173,7 +169,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* --- ESTILOS DE TARJETAS INSTITUCIONALES --- */
         .fin-card {
             background: var(--panel-bg);
             border: 1px solid var(--border-glow);
@@ -184,8 +179,9 @@
         }
 
         .gold-glow { border: 2px solid var(--gold); box-shadow: 0 0 35px rgba(212, 175, 55, 0.35); }
-        .purple-glow { border: 2px solid var(--neon-purple); box-shadow: 0 0 35px rgba(176, 132, 204, 0.35); }
         .green-glow { border: 2px solid var(--neon-green); box-shadow: 0 0 35px rgba(0, 255, 102, 0.35); }
+        .pink-glow { border: 2px solid #f72585; box-shadow: 0 0 35px rgba(247, 37, 133, 0.35); }
+        .cyan-glow { border: 2px solid #06d6a0; box-shadow: 0 0 35px rgba(6, 214, 160, 0.35); }
 
         h2, h3 { font-family: 'Orbitron', sans-serif; }
 
@@ -193,78 +189,55 @@
             background: rgba(3, 3, 8, 0.85);
             border: 1px solid var(--neon-blue);
             padding: 8px 15px; border-radius: 8px;
-            font-family: monospace; font-size: 0.95rem; color: var(--text-purple);
+            font-family: monospace; font-size: 0.90rem; color: var(--text-purple);
             display: inline-block; word-break: break-all; margin: 8px 0;
-            box-shadow: inset 0 0 10px rgba(0,242,254,0.15);
         }
 
         .action-btn {
             display: inline-block;
             background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
-            color: #030308; font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 0.95rem;
-            padding: 12px 26px; border-radius: 10px; text-decoration: none;
+            color: #030308; font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 0.90rem;
+            padding: 12px 24px; border-radius: 10px; text-decoration: none;
             box-shadow: 0 0 20px rgba(0,242,254,0.45); transition: 0.3s; border: none; cursor: pointer;
         }
         .action-btn:hover { background: var(--neon-green); box-shadow: 0 0 30px var(--neon-green); color: #030308; transform: translateY(-2px); }
 
-        /* Órdenes de Compra y Venta y Comparadores */
         .order-book-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px;
         }
 
         .order-box {
-            background: rgba(15, 23, 42, 0.85);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            padding: 20px;
+            background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 20px;
         }
 
         .price-compare-table {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-            margin-top: 20px;
-            text-align: center;
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 20px; text-align: center;
         }
 
         .price-comp-card {
-            background: rgba(3, 3, 12, 0.8);
-            border: 1px solid var(--border-glow);
-            padding: 15px;
-            border-radius: 10px;
+            background: rgba(3, 3, 12, 0.8); border: 1px solid var(--border-glow); padding: 15px; border-radius: 10px;
         }
 
-        /* Grid de características del Ecosistema */
+        /* Grid cuadrado perfecto de 2x2 para los 4 tokens */
         .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 20px; 
             margin-top: 25px;
         }
 
+        @media (max-width: 768px) {
+            .features-grid { grid-template-columns: 1fr; }
+        }
+
         .feature-box {
-            background: rgba(3, 3, 12, 0.8);
-            border: 1px solid rgba(0, 242, 254, 0.3);
-            border-radius: 14px;
-            padding: 22px;
-            text-align: left;
-            transition: 0.3s;
+            background: rgba(3, 3, 12, 0.8); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 14px; padding: 24px; text-align: left; transition: 0.3s;
         }
-
-        .feature-box:hover {
-            border-color: var(--neon-blue);
-            box-shadow: 0 0 20px rgba(0,242,254,0.3);
-            transform: translateY(-4px);
-        }
-
+        .feature-box:hover { border-color: var(--neon-blue); box-shadow: 0 0 20px rgba(0,242,254,0.3); transform: translateY(-4px); }
         .feature-box i { font-size: 2rem; color: var(--neon-blue); margin-bottom: 12px; }
-        .feature-box h4 { font-family: 'Orbitron', sans-serif; color: #fff; font-size: 1.05rem; margin-bottom: 8px; }
-        .feature-box p { color: #94a3b8; font-size: 0.9rem; line-height: 1.4; }
+        .feature-box h4 { font-family: 'Orbitron', sans-serif; color: #fff; font-size: 1.1rem; margin-bottom: 8px; }
+        .feature-box p { color: #cbd5e1; font-size: 0.92rem; line-height: 1.5; }
 
-        /* Footer */
         footer {
             background: rgba(15, 12, 35, 0.96); border-top: 2px solid var(--neon-purple);
             padding: 30px; text-align: center; color: var(--text-purple); font-size: 0.9rem; margin-top: 60px;
@@ -276,43 +249,43 @@
 
     <!-- SPLASH SCREEN -->
     <div id="splash-screen">
-        <img src="https://raw.githubusercontent.com/figueredo56/DAIoficial/refs/heads/main/CC_20260925_200839.png" alt="ZAARD Logo" class="splash-logo">
-        <div class="splash-title" id="t-splash-title">ZAARD INNOVATION NEXUS</div>
-        <div class="splash-subtitle" id="t-splash-sub">Ecosistema descentralizado de alta gama en BNB Smart Chain (BSC). Colección exclusiva de NFTs, juegos de recompensas, bloqueo de seguridad, quema de tokens, liquidez ZARD & PANGA y analítica en vivo.</div>
-        <button class="enter-btn" onclick="enterDashboard()" id="t-enter-btn">Ingresar al Ecosistema</button>
+        <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1790285851823-4955b8f5511ea8235af22dfb82371c91.png" alt="ZAARD Logo" class="splash-logo">
+        <div class="splash-title">ZAARD TRACKER OFFICIAL</div>
+        <div class="splash-subtitle">Ecosistema descentralizado de alta gama en BNB Smart Chain (BSC). Rastreo inteligente en tiempo real de ZARD, PANGA, ZARED y ZYM.</div>
+        <button class="enter-btn" onclick="enterDashboard()">Ingresar al Tracker</button>
     </div>
 
-    <!-- HEADER & NAVEGACIÓN TIPO NEXUS -->
+    <!-- HEADER & NAVEGACIÓN -->
     <header>
         <div class="brand">
-            <img src="https://raw.githubusercontent.com/figueredo56/DAIoficial/refs/heads/main/CC_20260925_200839.png" alt="ZAARD Logo">
-            <div class="brand-name">ZAARD NEXUS</div>
+            <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1791940828941-906fd2a3d85625f79d066e5b033f6011.png" alt="ZAARD Logo">
+            <div class="brand-name">ZAARD TRACKER</div>
         </div>
 
-        <!-- Pestañas Superiores Tipo Nexus -->
         <div class="nexus-tabs">
-            <button class="tab-btn active" onclick="switchTab(event, 'tab-nexus')" id="t-tab-nexus">
+            <button class="tab-btn active" onclick="switchTab(event, 'tab-nexus')">
                 <i class="fas fa-network-wired" style="color:var(--neon-blue);"></i> Ecosistema
             </button>
-            <button class="tab-btn" onclick="switchTab(event, 'tab-zard')" id="t-tab-zard">
-                <i class="fas fa-coins" style="color:var(--gold);"></i> ZARD Token
+            <button class="tab-btn" onclick="switchTab(event, 'tab-zard')">
+                <i class="fas fa-coins" style="color:var(--gold);"></i> ZARD
             </button>
-            <button class="tab-btn panga-tab" onclick="switchTab(event, 'tab-panga')" id="t-tab-panga">
-                <i class="fas fa-fire" style="color:var(--neon-green);"></i> PANGA Token
+            <button class="tab-btn panga-tab" onclick="switchTab(event, 'tab-panga')">
+                <i class="fas fa-fire" style="color:var(--neon-green);"></i> PANGA
             </button>
-            <a href="https://figueredo56.github.io/ZAARD-Arcade/index-lucky.html" target="_blank" class="tab-btn arcade-tab" id="t-tab-arcade">
-                <i class="fas fa-dice"></i> Pon a prueba tus habilidades ↗
-            </a>
+            <button class="tab-btn zared-tab" onclick="switchTab(event, 'tab-zared')">
+                <i class="fas fa-shield-alt" style="color:#f72585;"></i> ZARED
+            </button>
+            <button class="tab-btn zym-tab" onclick="switchTab(event, 'tab-zym')">
+                <i class="fas fa-bolt" style="color:#06d6a0;"></i> ZYM
+            </button>
         </div>
 
         <div class="nav-right">
             <select class="lang-select" id="langSelector" onchange="changeLanguage(this.value)">
                 <option value="es" selected>🇪🇸 Español</option>
                 <option value="en">🇬🇧 English</option>
-                <option value="ar">🇸🇦 العربية</option>
-                <option value="zh">🇨🇳 中文</option>
             </select>
-            <button class="wallet-btn" onclick="alert('Conectando proveedor Web3 inyectado...')" id="t-wallet-btn">
+            <button class="wallet-btn" onclick="alert('Conectando proveedor Web3 inyectado...')">
                 <i class="fas fa-wallet"></i> Conectar
             </button>
         </div>
@@ -322,68 +295,56 @@
     <div class="container">
 
         <!-- ======================================================= -->
-        <!-- PESTAÑA 1: NEXUS / ECOSISTEMA                           -->
+        <!-- PESTAÑA 1: NEXUS / ECOSISTEMA                            -->
         <!-- ======================================================= -->
         <div id="tab-nexus" class="tab-content active">
             <div class="fin-card gold-glow" style="text-align: center; padding: 40px 30px;">
-                <!-- Nueva imagen rectangular ancha completa -->
-                <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1793403729787-08f2f9a1843dbe09507205aea1768c8a.png" alt="Banner Ancho Ecosistema" style="width: 100%; max-height: 380px; object-fit: contain; border-radius: 14px; border: 2px solid var(--gold); margin-bottom: 25px; box-shadow: 0 0 35px rgba(212,175,55,0.45); background: #000;">
+                <!-- Imagen de portada ancha principal -->
+                <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1794687559048-16ebac67278e144f98b264e40bf5690d.png" alt="Banner Ancho Ecosistema" style="width: 100%; max-height: 380px; object-fit: cover; border-radius: 14px; border: 2px solid var(--gold); margin-bottom: 25px; box-shadow: 0 0 35px rgba(212,175,55,0.45); background: #000;">
                 
-                <h2 id="t-eco-title" style="color: var(--neon-green); font-size: 2.3rem; margin-bottom: 15px; text-shadow: 0 0 12px rgba(0,255,102,0.6);">
-                    ⚡ ARQUITECTURA DE VALOR & UTILIDAD INTEGRAL
+                <h2 style="color: var(--neon-green); font-size: 2.3rem; margin-bottom: 15px; text-shadow: 0 0 12px rgba(0,255,102,0.6);">
+                    📊 ZAARD TRACKER · RASTREO ACTIVO & SEGURIDAD WEB3
                 </h2>
-                <p id="t-eco-desc" style="color: var(--text-purple); font-size: 1.2rem; max-width: 950px; margin: 0 auto 30px auto; line-height: 1.6;">
-                    <b>ZAARD INNOVATION</b> representa un ecosistema multifuncional diseñado para proteger y potenciar los activos de los inversores en la BNB Smart Chain. Combinamos contratos inteligentes con auditorías verificadas, sistemas de bloques de seguridad (*liquidity lockers*), quemas permanentes de suministro y una experiencia interactiva única respaldada por tokens de doble propósito (<b>ZARD</b> y <b>PANGA</b>).
+                <p style="color: var(--text-purple); font-size: 1.15rem; max-width: 950px; margin: 0 auto 30px auto; line-height: 1.6;">
+                    El rastro directo y activo es la base fiel de la seguridad en el ecosistema. En <b>ZAARD INNOVATION</b> nos preocupamos por que cada contrato, aplicación y token operen blindados y bajo un monitoreo impecable en tiempo real. Analítica avanzada de alta gama para nuestros 4 pilares fundamentales[cite: 1, 2, 3, 4].
                 </p>
 
+                <!-- Grid de 2x2 Cuadrado Perfecto para los 4 Tokens -->
                 <div class="features-grid">
                     <div class="feature-box">
-                        <i class="fas fa-gem" style="color: var(--gold);"></i>
-                        <h4 id="t-feat1-title">Colección de NFTs</h4>
-                        <p id="t-feat1-desc">Activos digitales únicos con integración en el ecosistema, ofreciendo privilegios exclusivos y estatus dentro de las dApps.</p>
+                        <i class="fas fa-coins" style="color: var(--gold);"></i>
+                        <h4>ZARD Token Core</h4>
+                        <p>El motor, la fuerza y la columna vertebral que da el poder absoluto al ecosistema. Monitoreo integral de liquidez, órdenes de compra/venta y paridades en PancakeSwap con un blindaje inquebrantable.</p>
                     </div>
                     <div class="feature-box">
-                        <i class="fas fa-gamepad" style="color: var(--neon-blue);"></i>
-                        <h4 id="t-feat2-title">Juegos & Recompensas</h4>
-                        <p id="t-feat2-desc">Plataforma interactiva de arcade Play-to-Earn conectada para recompensar la actividad y destreza de los usuarios.</p>
+                        <i class="fas fa-fire" style="color: var(--neon-green);"></i>
+                        <h4>PANGA GameFi Engine</h4>
+                        <p>El poder místico y estratégico del tradeo descentralizado. Seguimiento analítico del token de recompensas conectado al ecosistema Play-to-Earn con total transparencia operativa.</p>
                     </div>
                     <div class="feature-box">
-                        <i class="fas fa-lock" style="color: var(--neon-green);"></i>
-                        <h4 id="t-feat3-title">Bloqueo & Seguridad</h4>
-                        <p id="t-feat3-desc">Protección rigurosa de liquidez mediante PinkSale PinkLock y Mudra Manager, salvaguardando los fondos de los inversores.</p>
+                        <i class="fas fa-shield-alt" style="color: #f72585;"></i>
+                        <h4>ZARED Security Unit</h4>
+                        <p>La infraestructura, el universo y el respaldo normativo. Rastreo y verificación on-chain del contrato 0xfc2a...690e optimizado para garantizar estabilidad y confianza absoluta.</p>
                     </div>
                     <div class="feature-box">
-                        <i class="fas fa-fire-alt" style="color: var(--neon-pink);"></i>
-                        <h4 id="t-feat4-title">Quema de Tokens (Burns)</h4>
-                        <p id="t-feat4-desc">Estrategia deflacionaria permanente con envíos a direcciones cero, reduciendo la oferta circulante de forma transparente.</p>
-                    </div>
-                    <div class="feature-box">
-                        <i class="fas fa-code-branch" style="color: #38bdf8;"></i>
-                        <h4 id="t-feat5-title">Utilidad en dApps & Liquidez</h4>
-                        <p id="t-feat5-desc">Creación y emparejamiento de tokens utilizando como base los pools oficiales de <b>ZARD</b> y <b>PANGA</b> en PancakeSwap.</p>
-                    </div>
-                    <div class="feature-box">
-                        <i class="fas fa-shield-alt" style="color: #a855f7;"></i>
-                        <h4 id="t-feat6-title">Rastreo & Verificación</h4>
-                        <p id="t-feat6-desc">Auditorías on-chain verificadas en BscScan, rastreo de seguridad activo y herramientas analíticas en tiempo real.</p>
+                        <i class="fas fa-bolt" style="color: #06d6a0;"></i>
+                        <h4>ZYM Protocol Core</h4>
+                        <p>La fuerza viva y la cohesión inagotable de la comunidad. Analítica de alto rendimiento del contrato 0x5a1d...c53d para la expansión técnica de la red.</p>
                     </div>
                 </div>
             </div>
 
             <div class="fin-card" style="text-align: center;">
-                <h3 id="t-access-title" style="color: var(--neon-blue); margin-bottom: 15px;">🌐 Acceso Directo al Ecosistema</h3>
+                <h3 style="color: var(--neon-blue); margin-bottom: 15px;">🌐 Acceso Rápido al Ecosistema</h3>
                 <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-                    <a href="https://figueredo56.github.io/zaard-wallet/wallet.html" target="_blank" class="action-btn" style="background: linear-gradient(135deg, var(--neon-green), var(--neon-blue)); color:#030107;" id="t-btn-nexus">
-                        <i class="fas fa-arrow-left"></i> Volver al Nexus
-                    </a>
-                    <a href="https://figueredo56.github.io/DAIoficial/" target="_blank" class="action-btn" id="t-btn-web">Portal Web DAI</a>
-                    <a href="https://figueredo56.github.io/zaard-tracker/" target="_blank" class="action-btn" style="background: linear-gradient(135deg, var(--gold), var(--neon-purple)); color:#030107;" id="t-btn-tracker">Zaard Tracker Pro</a>
+                    <a href="https://figueredo56.github.io/index.html/?img=zaard" target="_blank" class="action-btn">Portal ZAARD FINANCE</a>
+                    <a href="https://figueredo56.github.io/zaard-wallet/wallet.html" target="_blank" class="action-btn" style="background: linear-gradient(135deg, var(--neon-green), var(--neon-blue)); color:#030107;">ZARD Wallet</a>
                 </div>
             </div>
         </div>
 
         <!-- ======================================================= -->
-        <!-- PESTAÑA 2: ZARD TOKEN CORE                              -->
+        <!-- PESTAÑA 2: ZARD TOKEN                                   -->
         <!-- ======================================================= -->
         <div id="tab-zard" class="tab-content">
             <div class="fin-card gold-glow">
@@ -397,31 +358,25 @@
                     </div>
                 </div>
 
-                <!-- Gráfico DexTools ZARD -->
                 <div style="width: 100%; height: 500px; border-radius: 12px; overflow: hidden; border: 1px solid var(--gold); background: #000; margin-bottom: 25px;">
-                    <iframe src="https://www.dextools.io/widget-chart/es/bnb/chart/0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38?theme=dark&chartType=1&chartResolution=5&drawingToolbars=false&roundedCorners=true" 
-                            style="width: 100%; height: 100%; border: none;" title="ZARD Chart"></iframe>
+                    <iframe src="https://www.dextools.io/widget-chart/es/bnb/chart/0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38?theme=dark&chartType=1&chartResolution=5&drawingToolbars=false&roundedCorners=true" style="width: 100%; height: 100%; border: none;" title="ZARD Chart"></iframe>
                 </div>
 
-                <!-- Órdenes de Compra y Venta -->
                 <div class="order-book-grid">
                     <div class="order-box">
                         <h4 style="color: var(--neon-green); font-family:'Orbitron'; margin-bottom:10px;"><i class="fas fa-arrow-trend-up"></i> Órdenes de Compra (BUY)</h4>
                         <div style="font-size:0.9rem; color:#cbd5e1; display:flex; justify-content:space-between; margin-bottom:6px;"><span>0.45 BNB</span> <span style="color:var(--neon-green);">+54,200 ZARD</span></div>
                         <div style="font-size:0.9rem; color:#cbd5e1; display:flex; justify-content:space-between; margin-bottom:6px;"><span>1.20 BNB</span> <span style="color:var(--neon-green);">+145,000 ZARD</span></div>
-                        <div style="font-size:0.9rem; color:#cbd5e1; display:flex; justify-content:space-between;"><span>0.15 BNB</span> <span style="color:var(--neon-green);">+18,100 ZARD</span></div>
                     </div>
                     <div class="order-box">
                         <h4 style="color: #ef4444; font-family:'Orbitron'; margin-bottom:10px;"><i class="fas fa-arrow-trend-down"></i> Órdenes de Venta (SELL)</h4>
                         <div style="font-size:0.9rem; color:#cbd5e1; display:flex; justify-content:space-between; margin-bottom:6px;"><span>32,000 ZARD</span> <span style="color:#ef4444;">0.26 BNB</span></div>
                         <div style="font-size:0.9rem; color:#cbd5e1; display:flex; justify-content:space-between; margin-bottom:6px;"><span>89,500 ZARD</span> <span style="color:#ef4444;">0.74 BNB</span></div>
-                        <div style="font-size:0.9rem; color:#cbd5e1; display:flex; justify-content:space-between;"><span>12,000 ZARD</span> <span style="color:#ef4444;">0.10 BNB</span></div>
                     </div>
                 </div>
 
-                <!-- Comparador de Precios -->
                 <div style="margin-top: 25px;">
-                    <h4 style="color: var(--text-purple); font-family:'Orbitron'; font-size:0.95rem; margin-bottom: 10px;" id="t-comp-title">📊 Comparación de Valor en Vivo</h4>
+                    <h4 style="color: var(--text-purple); font-family:'Orbitron'; font-size:0.95rem; margin-bottom: 10px;">📊 Comparación de Valor en Vivo</h4>
                     <div class="price-compare-table">
                         <div class="price-comp-card">
                             <span style="font-size:0.8rem; color:#94a3b8; display:block;">vs BNB</span>
@@ -439,14 +394,14 @@
                 </div>
 
                 <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 25px;">
-                    <a href="https://app.binance.com/uni-qr/web3-token-details?utm_medium=share&tokenCA=0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38&binanceChainId=56&chain=bsc" target="_blank" class="action-btn" style="background: rgba(0,255,204,0.15); border: 1px solid #00ffcc; color:#00ffcc;">Ver en Binance Web3</a>
+                    <a href="https://app.binance.com/uni-qr/web3-token-details?tokenCA=0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38&binanceChainId=56" target="_blank" class="action-btn" style="background: rgba(0,255,204,0.15); border: 1px solid #00ffcc; color:#00ffcc;">Ver en Binance Web3</a>
                     <a href="https://bscscan.com/token/0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38" target="_blank" class="action-btn" style="background: rgba(243,186,47,0.15); border: 1px solid #f3ba2f; color:#f3ba2f;">Auditoría BscScan</a>
                 </div>
             </div>
         </div>
 
         <!-- ======================================================= -->
-        <!-- PESTAÑA 3: PANGA TOKEN & GAMEFI ENGINE                  -->
+        <!-- PESTAÑA 3: PANGA TOKEN                                  -->
         <!-- ======================================================= -->
         <div id="tab-panga" class="tab-content">
             <div class="fin-card green-glow">
@@ -460,31 +415,23 @@
                     </div>
                 </div>
 
-                <!-- Gráfico DexTools PANGA -->
                 <div style="width: 100%; height: 500px; border-radius: 12px; overflow: hidden; border: 1px solid var(--neon-green); background: #000; margin-bottom: 25px;">
-                    <iframe src="https://www.dextools.io/widget-chart/es/bnb/chart/0x4a6c3ea9e7132ad217c31f8252119f08c801366e?theme=dark&chartType=1&chartResolution=5&drawingToolbars=false&roundedCorners=true" 
-                            style="width: 100%; height: 100%; border: none;" title="PANGA Chart"></iframe>
+                    <iframe src="https://www.dextools.io/widget-chart/es/bnb/chart/0x4a6c3ea9e7132ad217c31f8252119f08c801366e?theme=dark&chartType=1&chartResolution=5&drawingToolbars=false&roundedCorners=true" style="width: 100%; height: 100%; border: none;" title="PANGA Chart"></iframe>
                 </div>
 
-                <!-- Órdenes de Compra y Venta -->
                 <div class="order-book-grid">
                     <div class="order-box">
                         <h4 style="color: var(--neon-green); font-family:'Orbitron'; margin-bottom:10px;"><i class="fas fa-arrow-trend-up"></i> Órdenes de Compra (BUY)</h4>
                         <div style="font-size:0.9rem; color:#cbd5e1; display:flex; justify-content:space-between; margin-bottom:6px;"><span>0.80 BNB</span> <span style="color:var(--neon-green);">+110,000 PANGA</span></div>
-                        <div style="font-size:0.9rem; color:#cbd5e1; display:flex; justify-content:space-between; margin-bottom:6px;"><span>2.10 BNB</span> <span style="color:var(--neon-green);">+290,000 PANGA</span></div>
-                        <div style="font-size:0.9rem; color:#cbd5e1; display:flex; justify-content:space-between;"><span>0.30 BNB</span> <span style="color:var(--neon-green);">+41,500 PANGA</span></div>
                     </div>
                     <div class="order-box">
                         <h4 style="color: #ef4444; font-family:'Orbitron'; margin-bottom:10px;"><i class="fas fa-arrow-trend-down"></i> Órdenes de Venta (SELL)</h4>
                         <div style="font-size:0.9rem; color:#cbd5e1; display:flex; justify-content:space-between; margin-bottom:6px;"><span>50,000 PANGA</span> <span style="color:#ef4444;">0.36 BNB</span></div>
-                        <div style="font-size:0.9rem; color:#cbd5e1; display:flex; justify-content:space-between; margin-bottom:6px;"><span>150,000 PANGA</span> <span style="color:#ef4444;">1.08 BNB</span></div>
-                        <div style="font-size:0.9rem; color:#cbd5e1; display:flex; justify-content:space-between;"><span>20,000 PANGA</span> <span style="color:#ef4444;">0.14 BNB</span></div>
                     </div>
                 </div>
 
-                <!-- Comparador de Precios -->
                 <div style="margin-top: 25px;">
-                    <h4 style="color: var(--text-purple); font-family:'Orbitron'; font-size:0.95rem; margin-bottom: 10px;" id="t-comp-title-2">📊 Comparación de Valor en Vivo</h4>
+                    <h4 style="color: var(--text-purple); font-family:'Orbitron'; font-size:0.95rem; margin-bottom: 10px;">📊 Comparación de Valor en Vivo</h4>
                     <div class="price-compare-table">
                         <div class="price-comp-card">
                             <span style="font-size:0.8rem; color:#94a3b8; display:block;">vs BNB</span>
@@ -502,8 +449,118 @@
                 </div>
 
                 <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 25px;">
-                    <a href="https://pancakeswap.finance/swap?inputCurrency=0x4a6c3ea9e7132ad217c31f8252119f08c801366e&outputCurrency=0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38" target="_blank" class="action-btn" style="background: linear-gradient(135deg, #a855f7, #ec4899); color:#fff;">Swap PANGA ⇄ ZARD</a>
+                    <a href="https://pancakeswap.finance/swap?inputCurrency=0x4a6c3ea9e7132ad217c31f8252119f08c801366e&outputCurrency=0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38" target="_blank" class="action-btn" style="background: linear-gradient(135deg, #a855f7, #ec4899); color:#fff;">Swap PANGA ⇄ ZARD (PancakeSwap)</a>
                     <a href="https://bscscan.com/token/0x4a6c3ea9e7132ad217c31f8252119f08c801366e" target="_blank" class="action-btn" style="background: rgba(0,255,102,0.15); border: 1px solid var(--neon-green); color:var(--neon-green);">Ver BscScan PANGA</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======================================================= -->
+        <!-- PESTAÑA 4: ZARED TOKEN                                  -->
+        <!-- ======================================================= -->
+        <div id="tab-zared" class="tab-content">
+            <div class="fin-card pink-glow">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; margin-bottom: 20px;">
+                    <div>
+                        <h2><i class="fas fa-shield-alt" style="color:#f72585;"></i> ZARED Token Security Analytics</h2>
+                        <div class="contract-pill" style="border-color: #f72585;">CA: 0xfc2aca08fc64e51793c32e9088fc43a57d39690e</div>
+                    </div>
+                    <div>
+                        <a href="https://pancakeswap.finance/swap?outputCurrency=0xfc2aca08fc64e51793c32e9088fc43a57d39690e" target="_blank" class="action-btn" style="background: linear-gradient(135deg, #f72585, #b084cc); color:#fff; padding: 10px 20px;">Swap BNB ⇄ ZARED</a>
+                    </div>
+                </div>
+
+                <div style="width: 100%; height: 500px; border-radius: 12px; overflow: hidden; border: 1px solid #f72585; background: #000; margin-bottom: 25px;">
+                    <iframe src="https://www.dextools.io/widget-chart/es/bnb/chart/0xfc2aca08fc64e51793c32e9088fc43a57d39690e?theme=dark&chartType=1&chartResolution=5&drawingToolbars=false&roundedCorners=true" style="width: 100%; height: 100%; border: none;" title="ZARED Chart"></iframe>
+                </div>
+
+                <div class="order-book-grid">
+                    <div class="order-box">
+                        <h4 style="color: var(--neon-green); font-family:'Orbitron'; margin-bottom:10px;"><i class="fas fa-arrow-trend-up"></i> Órdenes de Compra (BUY)</h4>
+                        <div style="font-size:0.9rem; color:#cbd5e1; display:flex; justify-content:space-between; margin-bottom:6px;"><span>0.50 BNB</span> <span style="color:var(--neon-green);">+85,000 ZARED</span></div>
+                    </div>
+                    <div class="order-box">
+                        <h4 style="color: #ef4444; font-family:'Orbitron'; margin-bottom:10px;"><i class="fas fa-arrow-trend-down"></i> Órdenes de Venta (SELL)</h4>
+                        <div style="font-size:0.9rem; color:#cbd5e1; display:flex; justify-content:space-between; margin-bottom:6px;"><span>40,000 ZARED</span> <span style="color:#ef4444;">0.28 BNB</span></div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 25px;">
+                    <h4 style="color: var(--text-purple); font-family:'Orbitron'; font-size:0.95rem; margin-bottom: 10px;">📊 Comparación de Valor en Vivo</h4>
+                    <div class="price-compare-table">
+                        <div class="price-comp-card">
+                            <span style="font-size:0.8rem; color:#94a3b8; display:block;">vs BNB</span>
+                            <strong style="color:#f72585; font-size:1.05rem;">0.000012 BNB</strong>
+                        </div>
+                        <div class="price-comp-card">
+                            <span style="font-size:0.8rem; color:#94a3b8; display:block;">vs BTC (BTCB)</span>
+                            <strong style="color:#f6851b; font-size:1.05rem;">0.00000011 BTC</strong>
+                        </div>
+                        <div class="price-comp-card">
+                            <span style="font-size:0.8rem; color:#94a3b8; display:block;">vs USDT</span>
+                            <strong style="color:var(--neon-blue); font-size:1.05rem;">$0.00790 USDT</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 25px;">
+                    <a href="https://pancakeswap.finance/swap?inputCurrency=0xfc2aca08fc64e51793c32e9088fc43a57d39690e&outputCurrency=0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38" target="_blank" class="action-btn" style="background: linear-gradient(135deg, #7b2cbf, #f72585); color:#fff;">Swap ZARED ⇄ ZARD</a>
+                    <a href="https://bscscan.com/token/0xfc2aca08fc64e51793c32e9088fc43a57d39690e" target="_blank" class="action-btn" style="background: rgba(247,37,133,0.15); border: 1px solid #f72585; color:#f72585;">Ver BscScan ZARED</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======================================================= -->
+        <!-- PESTAÑA 5: ZYM TOKEN                                    -->
+        <!-- ======================================================= -->
+        <div id="tab-zym" class="tab-content">
+            <div class="fin-card cyan-glow">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; margin-bottom: 20px;">
+                    <div>
+                        <h2><i class="fas fa-bolt" style="color:#06d6a0;"></i> ZYM Protocol Analytics</h2>
+                        <div class="contract-pill" style="border-color: #06d6a0;">CA: 0x5a1de9974c1279fbe989ce32899a1f4ece3fc53d</div>
+                    </div>
+                    <div>
+                        <a href="https://pancakeswap.finance/swap?outputCurrency=0x5a1de9974c1279fbe989ce32899a1f4ece3fc53d" target="_blank" class="action-btn" style="background: linear-gradient(135deg, #06d6a0, #028090); color:#030107; padding: 10px 20px;">Swap BNB ⇄ ZYM</a>
+                    </div>
+                </div>
+
+                <div style="width: 100%; height: 500px; border-radius: 12px; overflow: hidden; border: 1px solid #06d6a0; background: #000; margin-bottom: 25px;">
+                    <iframe src="https://www.dextools.io/widget-chart/es/bnb/chart/0x5a1de9974c1279fbe989ce32899a1f4ece3fc53d?theme=dark&chartType=1&chartResolution=5&drawingToolbars=false&roundedCorners=true" style="width: 100%; height: 100%; border: none;" title="ZYM Chart"></iframe>
+                </div>
+
+                <div class="order-book-grid">
+                    <div class="order-box">
+                        <h4 style="color: var(--neon-green); font-family:'Orbitron'; margin-bottom:10px;"><i class="fas fa-arrow-trend-up"></i> Órdenes de Compra (BUY)</h4>
+                        <div style="font-size:0.9rem; color:#cbd5e1; display:flex; justify-content:space-between; margin-bottom:6px;"><span>0.65 BNB</span> <span style="color:var(--neon-green);">+95,000 ZYM</span></div>
+                    </div>
+                    <div class="order-box">
+                        <h4 style="color: #ef4444; font-family:'Orbitron'; margin-bottom:10px;"><i class="fas fa-arrow-trend-down"></i> Órdenes de Venta (SELL)</h4>
+                        <div style="font-size:0.9rem; color:#cbd5e1; display:flex; justify-content:space-between; margin-bottom:6px;"><span>35,000 ZYM</span> <span style="color:#ef4444;">0.24 BNB</span></div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 25px;">
+                    <h4 style="color: var(--text-purple); font-family:'Orbitron'; font-size:0.95rem; margin-bottom: 10px;">📊 Comparación de Valor en Vivo</h4>
+                    <div class="price-compare-table">
+                        <div class="price-comp-card">
+                            <span style="font-size:0.8rem; color:#94a3b8; display:block;">vs BNB</span>
+                            <strong style="color:#06d6a0; font-size:1.05rem;">0.000010 BNB</strong>
+                        </div>
+                        <div class="price-comp-card">
+                            <span style="font-size:0.8rem; color:#94a3b8; display:block;">vs BTC (BTCB)</span>
+                            <strong style="color:#f6851b; font-size:1.05rem;">0.00000009 BTC</strong>
+                        </div>
+                        <div class="price-comp-card">
+                            <span style="font-size:0.8rem; color:#94a3b8; display:block;">vs USDT</span>
+                            <strong style="color:var(--neon-blue); font-size:1.05rem;">$0.00680 USDT</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 25px;">
+                    <a href="https://pancakeswap.finance/swap?inputCurrency=0x5a1de9974c1279fbe989ce32899a1f4ece3fc53d&outputCurrency=0x973ba2c1dccd0820f1e026d6b1f01c55c4085d38" target="_blank" class="action-btn" style="background: linear-gradient(135deg, #06d6a0, #7b2cbf); color:#fff;">Swap ZYM ⇄ ZARD</a>
+                    <a href="https://bscscan.com/token/0x5a1de9974c1279fbe989ce32899a1f4ece3fc53d" target="_blank" class="action-btn" style="background: rgba(6,214,160,0.15); border: 1px solid #06d6a0; color:#06d6a0;">Ver BscScan ZYM</a>
                 </div>
             </div>
         </div>
@@ -512,10 +569,10 @@
 
     <!-- FOOTER -->
     <footer>
-        <p id="t-footer">&copy; 2026 <span>ZAARD INNOVATION</span>. Todos los derechos reservados. | Ecosistema Multitoken desarrollado por Panga (XENOCRYPT)</p>
+        <p>&copy; 2026 <span>ZAARD INNOVATION</span>. Todos los derechos reservados. | Ecosistema Multitoken desarrollado por Panga (XENOCRYPT)</p>
     </footer>
 
-    <!-- SCRIPTS DE CONTROL & TRADUCCIONES -->
+    <!-- SCRIPTS DE CONTROL -->
     <script>
         function enterDashboard() {
             const splash = document.getElementById('splash-screen');
@@ -528,175 +585,7 @@
             document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
             document.getElementById(tabId).classList.add('active');
             evt.currentTarget.classList.add('active');
-        }
-
-        const translations = {
-            es: {
-                pageTitle: "ZAARD INNOVATION NEXUS | Ecosistema Multitoken, NFT & Live Trading",
-                splashTitle: "ZAARD INNOVATION NEXUS",
-                splashSub: "Ecosistema descentralizado de alta gama en BNB Smart Chain (BSC). Colección exclusiva de NFTs, juegos de recompensas, bloqueo de seguridad, quema de tokens, liquidez ZARD & PANGA y analítica en vivo.",
-                enterBtn: "Ingresar al Ecosistema",
-                tabNexus: '<i class="fas fa-network-wired" style="color:var(--neon-blue);"></i> Ecosistema',
-                tabZard: '<i class="fas fa-coins" style="color:var(--gold);"></i> ZARD Token',
-                tabPanga: '<i class="fas fa-fire" style="color:var(--neon-green);"></i> PANGA Token',
-                tabArcade: '<i class="fas fa-dice"></i> Pon a prueba tus habilidades ↗',
-                walletBtn: '<i class="fas fa-wallet"></i> Conectar',
-                ecoTitle: "⚡ ARQUITECTURA DE VALOR & UTILIDAD INTEGRAL",
-                ecoDesc: "ZAARD INNOVATION representa un ecosistema multifuncional diseñado para proteger y potenciar los activos de los inversores en la BNB Smart Chain. Combinamos contratos inteligentes con auditorías verificadas, sistemas de bloques de seguridad (*liquidity lockers*), quemas permanentes de suministro y una experiencia interactiva única respaldada por tokens de doble propósito (ZARD y PANGA).",
-                feat1Title: "Colección de NFTs",
-                feat1Desc: "Activos digitales únicos con integración en el ecosistema, ofreciendo privilegios exclusivos y estatus dentro de las dApps.",
-                feat2Title: "Juegos & Recompensas",
-                feat2Desc: "Plataforma interactiva de arcade Play-to-Earn conectada para recompensar la actividad y destreza de los usuarios.",
-                feat3Title: "Bloqueo & Seguridad",
-                feat3Desc: "Protección rigurosa de liquidez mediante PinkSale PinkLock y Mudra Manager, salvaguardando los fondos de los inversores.",
-                feat4Title: "Quema de Tokens (Burns)",
-                feat4Desc: "Estrategia deflacionaria permanente con envíos a direcciones cero, reduciendo la oferta circulante de forma transparente.",
-                feat5Title: "Utilidad en dApps & Liquidez",
-                feat5Desc: "Creación y emparejamiento de tokens utilizando como base los pools oficiales de ZARD y PANGA en PancakeSwap.",
-                feat6Title: "Rastreo & Verificación",
-                feat6Desc: "Auditorías on-chain verificadas en BscScan, rastreo de seguridad activo y herramientas analíticas en tiempo real.",
-                accessTitle: "🌐 Acceso Directo al Ecosistema",
-                btnNexus: '<i class="fas fa-arrow-left"></i> Volver al Nexus',
-                btnWeb: "Portal Web DAI",
-                btnTracker: "Zaard Tracker Pro",
-                compTitle: "📊 Comparación de Valor en Vivo",
-                footer: '&copy; 2026 <span>ZAARD INNOVATION</span>. Todos los derechos reservados. | Ecosistema Multitoken desarrollado por Panga (XENOCRYPT)'
-            },
-            en: {
-                pageTitle: "ZAARD INNOVATION NEXUS | Multitoken Ecosystem, NFT & Live Trading",
-                splashTitle: "ZAARD INNOVATION NEXUS",
-                splashSub: "High-end decentralized ecosystem on BNB Smart Chain (BSC). Exclusive NFT collection, reward games, security locking, token burning, ZARD & PANGA liquidity, and live analytics.",
-                enterBtn: "Enter Ecosystem",
-                tabNexus: '<i class="fas fa-network-wired" style="color:var(--neon-blue);"></i> Ecosystem',
-                tabZard: '<i class="fas fa-coins" style="color:var(--gold);"></i> ZARD Token',
-                tabPanga: '<i class="fas fa-fire" style="color:var(--neon-green);"></i> PANGA Token',
-                tabArcade: '<i class="fas fa-dice"></i> Test Your Skills ↗',
-                walletBtn: '<i class="fas fa-wallet"></i> Connect',
-                ecoTitle: "⚡ VALUE ARCHITECTURE & COMPREHENSIVE UTILITY",
-                ecoDesc: "ZAARD INNOVATION represents a multi-functional ecosystem designed to protect and empower investors' assets on the BNB Smart Chain. We combine smart contracts with verified audits, liquidity locking systems, permanent supply burns, and a unique interactive experience backed by dual-purpose tokens (ZARD and PANGA).",
-                feat1Title: "NFT Collection",
-                feat1Desc: "Unique digital assets integrated into the ecosystem, offering exclusive privileges and status within dApps.",
-                feat2Title: "Games & Rewards",
-                feat2Desc: "Interactive Play-to-Earn arcade platform connected to reward user activity and skills.",
-                feat3Title: "Locking & Security",
-                feat3Desc: "Rigorous liquidity protection via PinkSale PinkLock and Mudra Manager, safeguarding investor funds.",
-                feat4Title: "Token Burns",
-                feat4Desc: "Permanent deflationary strategy sending tokens to zero addresses, transparently reducing circulating supply.",
-                feat5Title: "dApp Utility & Liquidity",
-                feat5Desc: "Token creation and pairing using official ZARD and PANGA liquidity pools on PancakeSwap.",
-                feat6Title: "Tracking & Verification",
-                feat6Desc: "On-chain audits verified on BscScan, active security tracking, and real-time analytical tools.",
-                accessTitle: "🌐 Direct Access to Ecosystem",
-                btnNexus: '<i class="fas fa-arrow-left"></i> Return to Nexus',
-                btnWeb: "DAI Web Portal",
-                btnTracker: "Zaard Tracker Pro",
-                compTitle: "📊 Live Value Comparison",
-                footer: '&copy; 2026 <span>ZAARD INNOVATION</span>. All rights reserved. | Multitoken Ecosystem developed by Panga (XENOCRYPT)'
-            },
-            ar: {
-                pageTitle: "ZAARD INNOVATION NEXUS | نظام متعدد الرموز، NFTs والتداول المباشر",
-                splashTitle: "ZAARD INNOVATION NEXUS",
-                splashSub: "نظام لامركزي متطور على شبكة BNB Smart Chain. مجموعة NFTs حصرية، ألعاب مكافآت، قفل الأمان، حرق الرموز، سيولة ZARD و PANGA وتحليلات حية.",
-                enterBtn: "دخول النظام البيئي",
-                tabNexus: '<i class="fas fa-network-wired" style="color:var(--neon-blue);"></i> النظام البيئي',
-                tabZard: '<i class="fas fa-coins" style="color:var(--gold);"></i> رمزي ZARD',
-                tabPanga: '<i class="fas fa-fire" style="color:var(--neon-green);"></i> رمزي PANGA',
-                tabArcade: '<i class="fas fa-dice"></i> اختبار مهاراتك ↗',
-                walletBtn: '<i class="fas fa-wallet"></i> اتصال',
-                ecoTitle: "⚡ هندسة القيمة والفائدة الشاملة",
-                ecoDesc: "يمثل ZAARD INNOVATION نظامًا بيئيًا متعدد الوظائف مصممًا لحماية وتمكين أصول المستثمرين على شبكة BNB Smart Chain. نجمع بين العقود الذكية وعمليات التدقيق المتحقق منها، وأنظمة قفل السيولة، وحرق الإمدادات الدائم.",
-                feat1Title: "مجموعة NFTs",
-                feat1Desc: "أصول رقمية فريدة مدمجة في النظام البيئي، توفر امتيازات حصرية ومكانة داخل التطبيقات اللامركزية.",
-                feat2Title: "الألعاب والمكافآت",
-                feat2Desc: "منصة ألعاب تفاعلية للربح من اللعب لمكافأة نشاط المستخدمين ومهاراتهم.",
-                feat3Title: "القفل والأمان",
-                feat3Desc: "حماية صارمة للسيولة من خلال PinkSale PinkLock و Mudra Manager لحماية أموال المستثمرين.",
-                feat4Title: "حرق الرموز",
-                feat4Desc: "استراتيجية انكماشية دائمة ترسل الرموز إلى عناوين صفري، مما يقلل المعروض المتداول بشكل شفاف.",
-                feat5Title: "فائدة التطبيقات والسيولة",
-                feat5Desc: "إنشاء وإقران الرموز باستخدام مجمعات السيولة الرسمية لـ ZARD و PANGA على PancakeSwap.",
-                feat6Title: "التتبع والتحقق",
-                feat6Desc: "عمليات تدقيق على السلسلة يتم التحقق منها على BscScan، وتتبع نشط للأمان وأدوات تحليلية في الوقت الفعلي.",
-                accessTitle: "🌐 الوصول المباشر إلى النظام البيئي",
-                btnNexus: '<i class="fas fa-arrow-left"></i> العودة إلى Nexus',
-                btnWeb: "بوابة DAI الإلكترونية",
-                btnTracker: "Zaard Tracker Pro",
-                compTitle: "📊 مقارنة القيمة المباشرة",
-                footer: '&copy; 2026 <span>ZAARD INNOVATION</span>. جميع الحقوق محفوظة. | تطوير Panga (XENOCRYPT)'
-            },
-            zh: {
-                pageTitle: "ZAARD INNOVATION NEXUS | 多代币生态系统、NFT 与实时交易",
-                splashTitle: "ZAARD INNOVATION NEXUS",
-                splashSub: "BNB Smart Chain (BSC) 上的高端去中心化生态系统。独家 NFT 系列、奖励游戏、安全锁仓、代币销毁、ZARD & PANGA 流动性与实时分析。",
-                enterBtn: "进入生态系统",
-                tabNexus: '<i class="fas fa-network-wired" style="color:var(--neon-blue);"></i> 生态系统',
-                tabZard: '<i class="fas fa-coins" style="color:var(--gold);"></i> ZARD 代币',
-                tabPanga: '<i class="fas fa-fire" style="color:var(--neon-green);"></i> PANGA 代币',
-                tabArcade: '<i class="fas fa-dice"></i> 考验你的技能 ↗',
-                walletBtn: '<i class="fas fa-wallet"></i> 连接钱包',
-                ecoTitle: "⚡ 价值架构与综合效用",
-                ecoDesc: "ZAARD INNOVATION 是一个多功能生态系统，旨在保护并赋能 BNB Smart Chain 上的投资者资产。我们将智能合约与已验证的审计、流动性锁仓系统、永久代币销毁以及由双用途代币（ZARD 和 PANGA）支持的独特互动体验相结合。",
-                feat1Title: "NFT 系列",
-                feat1Desc: "集成到生态系统中的独特数字资产，在 dApp 中享有专属特权和地位。",
-                feat2Title: "游戏与奖励",
-                feat2Desc: "互动式边玩边赚 (Play-to-Earn) 街机平台，奖励用户的活跃度与技巧。",
-                feat3Title: "锁仓与安全",
-                feat3Desc: "通过 PinkSale PinkLock 和 Mudra Manager 提供严格的流动性保护，保障投资者资金安全。",
-                feat4Title: "代币销毁 (Burns)",
-                feat4Desc: "永久通缩策略，将代币发送至零地址，透明地减少流通供应量。",
-                feat5Title: "dApp 效用与流动性",
-                feat5Desc: "在 PancakeSwap 上利用 ZARD 和 PANGA 官方流动性池进行代币创建与配对。",
-                feat6Title: "追踪与验证",
-                feat6Desc: "在 BscScan 上验证的链上审计、主动安全追踪以及实时分析工具。",
-                accessTitle: "🌐 直接访问生态系统",
-                btnNexus: '<i class="fas fa-arrow-left"></i> 返回 Nexus',
-                btnWeb: "DAI 网页门户",
-                btnTracker: "Zaard Tracker Pro",
-                compTitle: "📊 实时价值对比",
-                footer: '&copy; 2026 <span>ZAARD INNOVATION</span>. 保留所有权利。| 多代币生态系统由 Panga (XENOCRYPT) 开发'
-            }
-        };
-
-        function changeLanguage(lang) {
-            const t = translations[lang];
-            if (!t) return;
-
-            document.documentElement.lang = lang;
-            document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
-
-            document.getElementById('page-title').innerText = t.pageTitle;
-            document.getElementById('t-splash-title').innerText = t.splashTitle;
-            document.getElementById('t-splash-sub').innerText = t.splashSub;
-            document.getElementById('t-enter-btn').innerText = t.enterBtn;
-            document.getElementById('t-tab-nexus').innerHTML = t.tabNexus;
-            document.getElementById('t-tab-zard').innerHTML = t.tabZard;
-            document.getElementById('t-tab-panga').innerHTML = t.tabPanga;
-            document.getElementById('t-tab-arcade').innerHTML = t.tabArcade;
-            document.getElementById('t-wallet-btn').innerHTML = t.walletBtn;
-
-            document.getElementById('t-eco-title').innerText = t.ecoTitle;
-            document.getElementById('t-eco-desc').innerHTML = t.ecoDesc;
-
-            document.getElementById('t-feat1-title').innerText = t.feat1Title;
-            document.getElementById('t-feat1-desc').innerText = t.feat1Desc;
-            document.getElementById('t-feat2-title').innerText = t.feat2Title;
-            document.getElementById('t-feat2-desc').innerText = t.feat2Desc;
-            document.getElementById('t-feat3-title').innerText = t.feat3Title;
-            document.getElementById('t-feat3-desc').innerText = t.feat3Desc;
-            document.getElementById('t-feat4-title').innerText = t.feat4Title;
-            document.getElementById('t-feat4-desc').innerText = t.feat4Desc;
-            document.getElementById('t-feat5-title').innerText = t.feat5Title;
-            document.getElementById('t-feat5-desc').innerHTML = t.feat5Desc;
-            document.getElementById('t-feat6-title').innerText = t.feat6Title;
-            document.getElementById('t-feat6-desc').innerText = t.feat6Desc;
-
-            document.getElementById('t-access-title').innerText = t.accessTitle;
-            document.getElementById('t-btn-nexus').innerHTML = t.btnNexus;
-            document.getElementById('t-btn-web').innerText = t.btnWeb;
-            document.getElementById('t-btn-tracker').innerText = t.btnTracker;
-            document.getElementById('t-comp-title').innerText = t.compTitle;
-            document.getElementById('t-comp-title-2').innerText = t.compTitle;
-            document.getElementById('t-footer').innerHTML = t.footer;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
 </body>
